@@ -1,18 +1,18 @@
 import React from 'react';
 import {Button} from '@mui/material'
-import axios from 'axios';
+// import axios from 'axios';
 
 const getBestReturns = async () => {
     console.log("Fetching best 7 day returns");
 
-    const url = 'https://locahost.com/returns'
-    const options = {
-        method: 'POST'
-    }
-    const response = await axios.get(url,options)
-            .then((response ) =>  {
-                console.log(response);
-            });
+    // const url = 'https://locahost.com/returns'
+    // const options = {
+    //     method: 'POST'
+    // }
+    // const response = await axios.get(url,options)
+    //         .then((response ) =>  {
+    //             console.log(response);
+    //         });
 }
 
 function getBestDeviation(){

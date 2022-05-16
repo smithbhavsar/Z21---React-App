@@ -1,6 +1,5 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import {Button} from '@mui/material'
-// import axios from 'axios';
 
 const getBestReturns = async () => {
     console.log("Fetching best 7 day returns");
@@ -20,6 +19,25 @@ function getBestDeviation(){
 }
 
 function Buttons(props) {
+
+    useEffect(() => {
+        getPost();
+      },[]);
+
+    async function getPost(){
+        const options = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            mode:'no-cors',
+        }
+        const response = await fetch('http://localhost:8080/post', options)
+        if(response){
+            console.log(response);
+        }
+        console.log("calling post data");
+    }
+
+
     return (
         <div>
             <div className='note'>

@@ -40,7 +40,8 @@ function Buttons(props) {
 
     function getBestDeviation(){
         console.log("Fetching best Standard deviation returns"); 
-
+        isActive(false);
+        
         toast('Work In Progress!', {
             position: "top-right",
             autoClose: 5000,

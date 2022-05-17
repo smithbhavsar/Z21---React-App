@@ -41,7 +41,7 @@ function Buttons(props) {
     function getBestDeviation(){
         console.log("Fetching best Standard deviation returns"); 
         isActive(false);
-        
+
         toast('Work In Progress!', {
             position: "top-right",
             autoClose: 5000,
@@ -83,7 +83,7 @@ function Buttons(props) {
             { active === true && <div className='note'>
                 <table className='table'>
                     <th>Scheme Code</th>
-                    <th>Scheme Scheme</th>
+                    <th>Scheme Name</th>
                     <th>Net Asset Value</th>
                 {funds.map(fund =>
                 <tr>

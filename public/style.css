@@ -25,7 +25,7 @@
   }
   
   footer {
-    position: absolute;
+    position: fixed;
     text-align: center;
     bottom: 0;
     width: 100%;
@@ -67,11 +67,11 @@
     padding: 20px;
   }
   th{
-    padding: 15px;
+    padding: 17px;
     color: #f5ba13;
   }
   td{
-    padding: 10px;
+    padding: 9px 20px;
   }
   .td3{
     position: relative;

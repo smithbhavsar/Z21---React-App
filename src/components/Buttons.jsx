@@ -4,9 +4,8 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-
 const api = axios.create({
-    baseURL: 'http://localhost:8080/returns'
+    baseURL: 'https://z21-webapp.herokuapp.com/returns'
 });
 
 function Buttons(props) {
@@ -19,7 +18,7 @@ function Buttons(props) {
         const options = {
             method: 'get',
         }
-        const response = await fetch('http://localhost:8080/post', options)
+        const response = await fetch('https://z21-webapp.herokuapp.com/post', options)
         if(response){
             console.log(response);
         }
